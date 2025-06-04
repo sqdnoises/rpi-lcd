@@ -1,0 +1,19 @@
+[project]
+name = "rpi-lcd"
+version = "0.1.0"
+authors = [
+    { name = "sqdnoises" }
+]
+description = "Control Raspberry Pi I2C LCD displays easily"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "smbus>=1.1.post2",
+]
+
+[project.urls]
+Homepage = "https://github.com/sqdnoises/rpi-lcd"
+
+[[tool.uv.index]]
+url = "https://www.piwheels.org/simple"

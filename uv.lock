@@ -1,0 +1,25 @@
+version = 1
+revision = 2
+requires-python = ">=3.8"
+
+[[package]]
+name = "rpi-lcd"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "smbus" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "smbus", specifier = ">=1.1.post2" }]
+
+[[package]]
+name = "smbus"
+version = "1.1.post2"
+source = { registry = "https://www.piwheels.org/simple" }
+wheels = [
+    { url = "https://www.piwheels.org/simple/smbus/smbus-1.1.post2-cp311-cp311-linux_armv6l.whl", hash = "sha256:0393e4a00e35ad70489d03377ed4ad429047a9e4a35c1c12c0d85ad80b332d67" },
+    { url = "https://www.piwheels.org/simple/smbus/smbus-1.1.post2-cp311-cp311-linux_armv7l.whl", hash = "sha256:0393e4a00e35ad70489d03377ed4ad429047a9e4a35c1c12c0d85ad80b332d67" },
+    { url = "https://www.piwheels.org/simple/smbus/smbus-1.1.post2-cp39-cp39-linux_armv6l.whl", hash = "sha256:b0cdccebd5d4e611cfb950bddff8798962b5d709a8e6d46c29b1929ab4f2abbc" },
+    { url = "https://www.piwheels.org/simple/smbus/smbus-1.1.post2-cp39-cp39-linux_armv7l.whl", hash = "sha256:b0cdccebd5d4e611cfb950bddff8798962b5d709a8e6d46c29b1929ab4f2abbc" },
+]
