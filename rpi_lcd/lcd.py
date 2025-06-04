@@ -432,9 +432,8 @@ class LCD:
                 # Phase 2 (Left): 1 to num_shifts (avoid repeating the last view)
                 phases = [range(num_shifts, -1, -1), range(1, num_shifts + 1)]
 
-            first_phase_incdice = True
-
             # Execute phases
+            first_phase_incdice = True
             for phase_no, phase_indices in enumerate(phases, start=1):
                 if time.monotonic() > end_time:
                     break  # Timeout occurred
